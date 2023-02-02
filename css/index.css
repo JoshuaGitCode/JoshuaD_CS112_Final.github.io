@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+main{
+    margin-right: 11%;
+    display: flexbox;
+    flex-direction: column;
+    
+    width: 65%;
+    min-height: 400px;
+    margin: auto;
+    
+}
+
+main #container{
+    background-color: lightgray;
+    margin: 0 0 10px 0;
+    padding: 0px 8px;
+    border: solid 1px gray;
+    height: 299px;
+}
+
+#container-detail{
+    padding: 9px 5px;
+    border: none;
+    height: 45px;
+}
+#news-container1{
+    border-bottom: solid 1px black ;
+    padding: 4%;
+    margin: 2% 4%;
+}
+#news-title{
+    text-align: center;
+}
+img{
+    object-fit: cover;
+    position: absolute;
+    height: 230px;
+    width: 300px;
+}
+.slider{
+    float:left;
+    height: 230px;
+    width: 300px;
+}
+.slider img{
+    object-fit: cover;
+    position: absolute;
+    height: 220px;
+    width: 300px;
+}
+.slider img:nth-of-type(1){
+    animation-name: fader;
+    animation-delay: 10s;
+    animation-duration: 4s;
+    z-index: 20;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#slider img:nth-of-type(2){
+    z-index: 10;
+}
+@keyframes fader{
+    from{opacity: 1.0;}
+    to{opacity: 0.0; } 
+}

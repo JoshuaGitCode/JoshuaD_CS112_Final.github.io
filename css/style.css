@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+   
+}
+nav{
+    width: 100%;
+    min-height: 29px;
+    background-color: #222;
+    margin-bottom: 10px;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 11%;
+}
+li{
+    margin:12px 14px 12px 14px;
+    color: white; 
+}
+a{
+    color: white;
+}
+a::selection{
+    text-decoration: underline; 
+}
+

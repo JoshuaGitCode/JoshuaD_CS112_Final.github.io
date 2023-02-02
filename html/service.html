@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Service</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li> <a href="../index.html" style="color: white;">Home Page</a> </li>
+      <li> <a>Service Page</a> </li>
+      <li> <a href="contact.html"  style="color: white;" >Contact Page</a> </li>
+    </ul>
+  </nav>
+  <!-- AUCTION CARD -->
+  <div class="container">
+    <div class="card" style="max-height: 400px;">
+      <img src="../images/Auction.jpg" alt="" class="card-img" style="height:330px; object-fit: cover;">
+      <div class="card-body card-img-overlay">
+        <h1 class="title">Auction</h1>
+        <div class="subtitle" style=" margin-bottom: 12px;">Auction out used items</div>
+        <button class="btn btn-primary">Join</button>
+        <button id="show-more" onclick="hideAuction()">Show more</button>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin:10px auto;">
+    <!-- SET 1 GPUs -->
+    <div class="card" id="gpuCard1">
+      <div class="card-body" >
+        <h4 class="title">GPU</h4>
+        <div class="row">
+          <!-- Item 1 GPU -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">GTX 1660ti</h5>
+              <img src="../images/gpu1.png" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$260.34</div>
+          </div>
+          </div>
+          <!-- Item 2 GPU -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">GTX 1080</h5>
+              <img src="../images/gpu2.PNG" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$230.34</div>
+            </div>
+          </div>
+          <!-- Item 3 GPU -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">AMD Radeon RX 7900 XTX</h5>
+              <img src="../images/gpu3.PNG" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$260.34</div>
+            </div>
+          </div>
+          <!-- Item 4 GPU -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">Nvidia GeForce RTX 3060 Ti</h5>
+              <img src="../images/gpu4.PNG" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$260.34</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" id="prebuiltCard2">
+      <div class="card-body" >
+        <h4 class="title">Pre-Built Computer</h4>
+        <div class="row">
+          <!-- Item 1 Computer  -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">GTX 1660ti</h5>
+              <img src="../images/gpu1.png" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$260.34</div>
+          </div>
+          </div>
+          <!-- Item 2 Computer  -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">GTX 1080</h5>
+              <img src="../images/gpu2.PNG" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$230.34</div>
+            </div>
+          </div>
+          <!-- Item 3 Computer  -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">AMD Radeon RX 7900 XTX</h5>
+              <img src="../images/gpu3.PNG" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$260.34</div>
+            </div>
+          </div>
+          <!-- Item 4 Computer -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">Nvidia GeForce RTX 3060 Ti</h5>
+              <img src="../images/gpu4.PNG" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$260.34</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SALES CARD -->
+  <div class="container" style="margin: 10px auto;">
+    <div class="card" style="max-height: 400px;">
+      <img src="../images/Tech.PNG" alt="" class="card-img" style="height:330px; object-fit: cover;">
+      <div class="card-body card-img-overlay">
+        <h1 class="title" style="color: white;">Sale</h1>
+        <div class="subtitle" style=" margin-bottom: 12px; color: white;" >Auction out used items</div>
+        <button class="btn btn-primary">Join</button>
+        <button id="show-more" onclick="hideSale()">Show more</button>
+      </div>
+    </div>
+  </div> 
+  <div class="container" style="margin:10px auto;">
+    <!-- SET 1 Retro Video Games -->
+    <div class="card" id="cpuCard1">
+      <div class="card-body" >
+        <h4 class="title">CPU</h4>
+        <div class="row">
+          <!-- Item 1 Games -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">GTX 1660ti</h5>
+              <img src="../images/gpu1.png" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$260.34</div>
+          </div>
+          </div>
+          <!-- Item 2 Games -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">GTX 1080</h5>
+              <img src="../images/gpu2.PNG" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$230.34</div>
+            </div>
+          </div>
+          <!-- Item 3 Games -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">AMD Radeon RX 7900 XTX</h5>
+              <img src="../images/gpu3.PNG" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$260.34</div>
+            </div>
+          </div>
+          <!-- Item 4 Games -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">Nvidia GeForce RTX 3060 Ti</h5>
+              <img src="../images/gpu4.PNG" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$260.34</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SET 2 Headphones -->
+    <div class="card" id="desktopCaseCard2">
+      <div class="card-body" >
+        <h4 class="title">2</h4>
+        <div class="row">
+          <!-- Item 1 Headphone -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">GTX 1660ti</h5>
+              <img src="../images/gpu1.png" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$260.34</div>
+          </div>
+          </div>
+          <!-- Item 2 Headphone -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">GTX 1080</h5>
+              <img src="../images/gpu2.PNG" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$230.34</div>
+            </div>
+          </div>
+          <!-- Item 3 Headphone -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">AMD Radeon RX 7900 XTX</h5>
+              <img src="../images/gpu3.PNG" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$260.34</div>
+            </div>
+          </div>
+          <!-- Item 4 Headphone -->
+          <div class="col-sm">
+            <div class="card">
+              <h5 class="title" style="margin:6px auto;">Nvidia GeForce RTX 3060 Ti</h5>
+              <img src="../images/gpu4.PNG" alt="" style="height: 145px; width: 220px; margin:auto;">
+              <div>$260.34</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <script src="../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

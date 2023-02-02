@@ -1,0 +1,22 @@
+.col-sm{
+    margin: 2px;
+}
+#show-more{
+    font-size: 20px;
+    padding: 0 10px;
+    background-color: white;
+    position: absolute;
+    bottom: 6px;
+    left: 45%;
+}
+h5{
+    margin-top: 10px 0;
+}
+#gpuCard1, #prebuiltCard2 , #cpuCard1, #desktopCaseCard2{
+    display: none;
+}
+img{
+    object-fit: fill;
+    length: 300px;
+    height: 300px;
+}
