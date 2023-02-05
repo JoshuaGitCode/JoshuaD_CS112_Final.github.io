@@ -1,7 +1,7 @@
 .col-sm{
     margin: 2px;
 }
-#show-more{
+#show-more-sales, #show-more-auction{
     font-size: 20px;
     padding: 0 10px;
     background-color: white;
